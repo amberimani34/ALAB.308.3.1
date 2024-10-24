@@ -21,3 +21,23 @@ while (n >= 2) {
     }   n--;
 }
 
+console.log('Part 2 Continued')
+n = 5;
+let nextNum = n+1
+while (true) {
+let isPrime = true;
+for (let i = 2; i < nextNum; i++) {
+    if (n % i === 0) {
+        isPrime = false;
+        break;
+    }
+}
+if (isPrime) {
+    console.log(n);
+    break;
+}
+n++;
+}
+
+
+console.log('Part 3')
